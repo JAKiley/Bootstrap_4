@@ -12,16 +12,14 @@
     <body>
         <div class="container">
             <h1 class="text-center display-2">Part 1</h1>
-            <div class="form-group">
-                <h2>Billing Address</h2>
-            </div>
+            <h4>Billing Address</h4>
             <form>
                 <div class="form-group">
                     <label for="fullName">Full Name</label>
                     <input type="text" class="form-control" id="fullName" placeholder="Full Name">
                 </div>
                 <div class="form-group">
-                    <label for="userName">Usename</label>
+                    <label for="userName">Username</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">@</span>
@@ -35,8 +33,8 @@
                     <input type="email" class="form-control" id="email" placeholder="you@example.com">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                    <label for="address1">Address</label>
+                    <input type="text" class="form-control" id="address1" placeholder="1234 Main St">
                 </div>
                 <div class="form-group">
                     <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
@@ -45,64 +43,61 @@
                 <div class="form-group">
                     <label for="specialNotes">Special Notes <span class="text-muted">(Optional)</span></label>
                     <textarea class="form-control" id="specialNotes" rows="3"></textarea>
-                    <small id="specialNotesHelpBlock" class="form-text text-muted"> Include any special requests you
-                        have for us! </small>
+                    <small class="text-muted"> Include any special requests you have for us! </small>
                 </div>
                 <div class="form-group">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Shipping address is same as
+                        <input type="checkbox" class="custom-control-input" id="sameShipping">
+                        <label class="custom-control-label" for="sameShipping">Shipping address is same as
                             billing</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Save my info for next time</label>
+                        <input type="checkbox" class="custom-control-input" id="saveInfo">
+                        <label class="custom-control-label" for="saveInfo">Save my info for next time</label>
                     </div>
                 </div>
                 <hr>
                 <div class="form-group">
-                    <h2>Shipping Options</h2>
+                    <h4>Shipping Options</h4>
                 </div>
                 <div class="form-group">
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="customRadio1" name="customRadio">
-                        <label class="custom-control-label" for="customRadio1">Same Day Shipping</label>
+                        <input type="radio" class="custom-control-input" id="sameDay" name="shipMethod">
+                        <label class="custom-control-label" for="sameDay">Same Day Shipping</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="customRadio2" name="customRadio">
-                        <label class="custom-control-label" for="customRadio2">Next Day Shipping</label>
+                        <input type="radio" class="custom-control-input" id="nextDay" name="shipMethod">
+                        <label class="custom-control-label" for="nextDay">Next Day Shipping</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="customRadio3" name="customRadio">
-                        <label class="custom-control-label" for="customRadio3">3-5 Business Days</label>
+                        <input type="radio" class="custom-control-input" id="busDay" name="shipMethod">
+                        <label class="custom-control-label" for="busDay">3-5 Business Days</label>
                     </div>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary btn-lg btn-block">Continue to Checkout</button>
+                    <input type="submit" value="Continue to Checkout" class="btn btn-primary btn-lg btn-block">
                 </div>
             </form>
         </div>
         <h1 class="text-center display-2">Part 2</h1>
-        <div class="container border rounded" style="max-width: 400px;">
+        <div class="container border rounded p-5 mb-5" style="max-width: 400px;">
+            <h3 class="text-center m-4"> Sign In</h3>
             <form>
-                <h2 class="text-center"> Sign In</h2>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="emailPt2" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="passwordPt2" placeholder="Password">
+                    <input type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customRemPt2">
-                        <label class="custom-control-label" for="customRemPt2">Remember me</label>
-                    </div>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="custom-control custom-checkbox form-group">
+                    <input type="checkbox" class="custom-control-input" id="remMe">
+                    <label class="custom-control-label" for="remMe">Remember me</label>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-success btn-lg btn-block">Sign In</button>
+                    <input type="submit" value="Sign In" class="btn btn-info btn-lg btn-block">
                 </div>
-                <div class="form-group text-center"> Not a member? <span class="text-success">Register</span>
-                </div>
+                <p class="text-center m-2"> Not a member? <a href="#" class="text-info">Register</a>
+                </p>
             </form>
         </div>
         <hr>
